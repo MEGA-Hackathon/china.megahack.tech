@@ -2,10 +2,8 @@ import { useEffect } from 'react';
 import './PastEvents.css';
 import Styles from './PastEvents.module.css'
 import { useTranslation, Trans } from 'react-i18next';
-import { useNavigate } from 'react-router-dom';
 
 function PastEvents() {
-    const navigate = useNavigate();
 
     const { t, i18n } = useTranslation();
 
