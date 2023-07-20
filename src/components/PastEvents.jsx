@@ -18,8 +18,8 @@ function PastEvents() {
 <div className={Styles.PastEventsWrapper}>
         
     <div className={Styles.eventHeading}>
-    <h3 className={Styles.eventHeadingH3}>EVENTS</h3>
-    <h4>Wonderful past</h4>
+    <h2 className={Styles.eventHeadingH3}>EVENTS</h2>
+    <h3>Wonderful past</h3>
     </div>
     
     <div className={Styles.eventCards}>
@@ -57,7 +57,7 @@ function PastEvents() {
               <div className={Styles.eventDeck2}>
               <div className={Styles.eventCard}>
                   <div className={Styles.eventImage}>
-                      <img src="/image-3@2x.png" alt="img" />
+                      <img src="/image-6@2x.png" alt="img" />
                   </div>
                   <div className={Styles.eventBar3}>
                       <div className={Styles.eleft}>{t('event.cardbar3')}</div>
@@ -71,7 +71,7 @@ function PastEvents() {
               </div>
               <div className={Styles.eventCard}>
                   <div className={Styles.eventImage}>
-                      <img src="/image-3@2x.png" alt="img" />
+                      <img src="/image-7@2x.png" alt="img" />
                   </div>
                   <div className={Styles.eventBar4}>
                       <div className={Styles.eleft}>{t('event.cardbar4')}</div>

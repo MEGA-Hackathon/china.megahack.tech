@@ -23,6 +23,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    text-align: center;
     
 }
 
@@ -40,11 +41,13 @@
 }
 
 .eventCard {
-    width: 13.5rem;
+    width: 18rem;
     height: fit-content;
-    margin-right: 4.5rem;
+    margin-right: 5rem;
+    margin-left: 5rem;
     text-align:left;
     height: 20rem;
+    text-align: justify;
   }
   
   .eventImage {
@@ -54,6 +57,7 @@
   
   .eventImage img {
     height: 100%;
+    width: 100%;
     object-fit: cover;
     border-radius: 15px 15px 0px 0px;
   }
@@ -108,7 +112,7 @@
   }
 
   .cardHead2 {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: bold;
   }
   
@@ -159,6 +163,10 @@
   
   /*Mobile Events-Section */
   @media only screen and (max-width: 768px) {
+
+    .eventHeading{
+      margin-top: 4rem;
+    }
 
     .eventCards{
       justify-content: center;
