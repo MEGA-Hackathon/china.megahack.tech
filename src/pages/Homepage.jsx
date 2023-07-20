@@ -38,6 +38,11 @@ function Homepage() {
         console.log('Navigating to Events');
     };
 
+    const navigateToResources = () => {
+        navigate('/Resources')
+        console.log('Navigate to Resources')
+    }
+
     const scrollToBottom = () => {
         window.scrollTo({
             top: document.documentElement.scrollHeight,
@@ -156,7 +161,7 @@ function Homepage() {
                     </div>
                 </div>
                 <div align="center">
-                    <div className={Styles.learnMore}>{t('intro.learnmore')}</div>
+                    <div className={Styles.learnMore} onClick={navigateToResources}>{t('intro.learnmore')}</div>
                 </div>
 
             </div>

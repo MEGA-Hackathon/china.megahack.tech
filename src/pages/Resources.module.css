@@ -1,0 +1,78 @@
+.pageContainer {
+    position: relative;
+}
+  
+.dashedBorderContainer {
+    position: absolute;
+    padding: 20px;
+    left: 183px;
+    top: 126px;
+    width: 566px;
+    height: auto;
+    border: 2px dashed #9747FF;
+    border-radius: 5px;
+}
+  
+  .dashedBorderRow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 0px;
+  }
+  
+  .item {
+    flex-basis: 130px; /* Add flex-basis to control spacing between items */
+    text-align: center;
+    padding: 5px;
+    font-family: var(--font-space-mono);
+    font-size: 14;
+}
+  
+  .underline {
+    /* Add the special underline effect here */
+    color: #7F5EDD;
+    border-bottom: 2px solid #7F5EDD;
+  }
+  
+  .rectanglesContainer {
+    position: absolute;
+    left: 183px;
+    top: 450px; /* Adjust the top position to place the rectangles below the dashed border div */
+    width: 566px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .rectangleColumn {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+  }
+  
+  .rectangle {
+    width: 100px;
+    height: 20px;
+    box-sizing: border-box;
+  }
+  
+  .text {
+    position: relative;
+    bottom: 18px;
+    text-align: center;
+  }
+  .expandableDivContainer {
+    position: relative;
+    display: flex; /* Use flexbox to align items horizontally */
+    flex-wrap: wrap; /* Allow items to wrap to the next row */
+    justify-content: space-between; /* Distribute items evenly along the container */
+    width: 566px; /* Adjust the width as needed */
+    top: 650px;
+    left: 183px;
+  }
+  
+  /* Add styles for the columns */
+  .expandableDivColumn {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; /* Add some spacing between columns */
+  }

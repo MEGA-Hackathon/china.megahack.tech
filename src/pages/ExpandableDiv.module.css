@@ -1,0 +1,26 @@
+.expandableDiv {
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    max-width: 400px; /* Set a maximum width for the div container */
+
+  }
+  
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .arrowUp::after {
+    content: '▲';
+  }
+  
+  .arrowDown::after {
+    content: '▼';
+  }
+  
+  .content {
+    margin-top: 10px;
+  }
+  
