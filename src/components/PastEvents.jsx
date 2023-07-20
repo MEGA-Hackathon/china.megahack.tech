@@ -2,8 +2,10 @@ import { useEffect } from 'react';
 import './PastEvents.css';
 import Styles from './PastEvents.module.css'
 import { useTranslation, Trans } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
 
 function PastEvents() {
+    const navigate = useNavigate();
 
     const { t, i18n } = useTranslation();
 
@@ -36,7 +38,7 @@ function PastEvents() {
                       <div className={Styles.cardHead2}>{t('event.cardhead1')}</div>
                       <div className={Styles.cardText2}>{t('event.cardtext1')}</div>
                   </div>
-                  <div className={Styles.div3LearnMore2}>{t('event.learnmore')}</div>
+                  <div className={Styles.div3LearnMore2} onClick={()=>window.open("https://digitalstorytelling2023.megahack.tech", '_blank')}>{t('event.learnmore')}</div>
               </div>
               <div className={Styles.eventCard}>
                   <div className={Styles.eventImage}>
@@ -50,7 +52,7 @@ function PastEvents() {
                       <div className={Styles.cardHead2}>{t('event.cardhead2')}</div>
                       <div className={Styles.cardText2}>{t('event.cardtext2')}</div>
                   </div>
-                  <div className={Styles.div3LearnMore2}>{t('event.learnmore')}</div>
+                  <div className={Styles.div3LearnMore2} onClick={()=>window.open("https://hack2023.megahack.tech/", '_blank')}>{t('event.learnmore')}</div>
               </div>
               </div>
 
@@ -67,7 +69,7 @@ function PastEvents() {
                       <div className={Styles.cardHead2}>{t('event.cardhead3')}</div>
                       <div className={Styles.cardText2}>{t('event.cardtext3')}</div>
                   </div>
-                  <div className={Styles.div3LearnMore2}>{t('event.learnmore')}</div>
+                  <div className={Styles.div3LearnMore2} onClick={()=>window.open("https://mega-hackathon-2023.devpost.com/project-gallery", '_blank')}>{t('event.learnmore')}</div>
               </div>
               <div className={Styles.eventCard}>
                   <div className={Styles.eventImage}>
@@ -81,7 +83,7 @@ function PastEvents() {
                       <div className={Styles.cardHead2}>{t('event.cardhead4')}</div>
                       <div className={Styles.cardText2}>{t('event.cardtext4')}</div>
                   </div>
-                  <div className={Styles.div3LearnMore2}>{t('event.learnmore')}</div>
+                  <div className={Styles.div3LearnMore2} onClick={()=>window.open("https://worldwidedebate.megahack.tech/", '_blank')}>{t('event.learnmore')}</div>
               </div>
           </div>
           </div>
