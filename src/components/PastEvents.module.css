@@ -159,6 +159,48 @@
   
   /*Mobile Events-Section */
   @media only screen and (max-width: 768px) {
+
+    .eventCards{
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      width: 100%;
+    }
+    
+    .eventDeck1{
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      width: 100%;
+    }
+    
+    .eventDeck2{
+      display: flex;
+      margin: 0;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .eventCard{
+      margin: 0;
+      margin-bottom: 3rem;
+      width: 60%;
+      height:fit-content;
+    }
+
+    .eventImage {
+      width: 100%;
+      height: 8rem;
+    }
+    
+    .eventImage img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 15px 15px 0px 0px;
+    }
+    
+
     .eventHead,
     .event {
       display: none;
