@@ -20,7 +20,7 @@ export default function Events() {
       <Navbar />
       
     <div className='child-container'>       
-      <div className={Styles.div1Content} style={{ paddingBottom: '10rem'}}>
+      <div className={Styles.div1Content}>
         <div className={Styles.hot} style={{color: 'black'}}>Upcoming Event</div>
         <div className={Styles.megaHeading}>mega</div>
         <div className={Styles.megaHeading}>ideahack</div>
@@ -37,7 +37,7 @@ export default function Events() {
         </div>
       </div>
 
-      <div className={Styles.posterDiv}>
+      <div className={Styles.posterDiv} style={{ height:"60vh "}}>
         <div className={Styles.poster}>
           <img src="/poster.png" alt="poster" />
         </div>
