@@ -169,7 +169,7 @@ function Homepage() {
                     </div>
                 </div>
 
-                <div align="center">
+                <div style={{align:"center"}}>
                     <div className={Styles.learnMore} onClick={navigateToResources}>{t('intro.learnmore')}</div>
                 </div>
 
@@ -178,69 +178,69 @@ function Homepage() {
 
             {/* Events-Section */}
 
-            <div className={Styles.eventHead} >
-                <div align="center">
-                    <div className={Styles.eventTitle}>Events</div>
-                    <div className={Styles.activity}>{t('event.activity')}</div>
-                </div>
-            </div>
+          <div className={Styles.eventHead} >
+          <div>
+              <div className={Styles.eventTitle}>Events</div>
+              <div className={Styles.activity}>{t('event.activity')}</div>
+          </div>
+          </div>
+          
 
-
-            <div className={Styles.event}>
-                <div className={Styles.eventDisplay}>
-                    <div className={Styles.eventPoster}>
-                        <img src="/events-image1.png" alt="event Image" />
-                    </div>
-                    <div className={Styles.eventContent}>
-                        <div className={Styles.hot2}>{t('event.hot')}</div>
-                        <div className="eventTitle">
-                            <div className={Styles.megaHeading2}>mega</div>
-                            <div className={Styles.megaHeading2}>ideahack</div>
-                        </div>
-
-                        <div className={Styles.date}>2023.7.22 - 24</div>
-                        <div className={Styles.date}>{t('event.city')}</div>
-                        <div className={Styles.div3Buttons}>
-                            <div className={Styles.div3signUp} onClick={handleSignUp}>{t('event.signup')}</div>
-                            <div className={Styles.div3LearnMore} onClick={navigateToEvents}>{t('event.learnmore')}</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className={Styles.eventCards}>
-                    <div className={Styles.eventCard}>
-                        <div className={Styles.eventImage}>
-                            <img src="/image-2@2x.png" alt="img" />
-                        </div>
-                        <div className={Styles.eventBar}>
-                            <div className={Styles.eleft}>{t('event.cardbar1')}</div>
-                            <div className={Styles.eright}>AI/ML</div>
-                        </div>
-                        <div className={Styles.cardContent2}>
-                            <div className={Styles.cardHead2}>{t('event.cardhead1')}</div>
-                            <div className={Styles.cardText2}>{t('event.cardtext1')}</div>
-                        </div>
-                        <div className={Styles.div3LearnMore2} onClick={navigateToAboutUs}>{t('event.learnmore')}</div>
-                    </div>
-                    <div className={Styles.eventCard}>
-                        <div className={Styles.eventImage}>
-                            <img src="/image-3@2x.png" alt="img" />
-                        </div>
-                        <div className={Styles.eventBar2}>
-                            <div className={Styles.eleft}>{t('event.cardbar2')}</div>
-                            <div className={Styles.eright}>Competitiveness</div>
-                        </div>
-                        <div className={Styles.cardContent2}>
-                            <div className={Styles.cardHead2}>{t('event.cardhead1')}</div>
-                            <div className={Styles.cardText2}>{t('event.cardtext1')}</div>
-                        </div>
-                        <div className={Styles.div3LearnMore2} onClick={navigateToAboutUs}>{t('event.learnmore')}</div>
-                    </div>
-                </div>
-                <div className={Styles.eventMore}>
-                    <div className={Styles.more}>{t('event.more')}</div>
-                </div>
-            </div>
+          <div className={Styles.event}>  
+          <div className= {Styles.eventDisplay}>
+              <div className={Styles.eventPoster}>
+                  <img src="/events-image1.png" alt="event Image" />
+              </div>
+              <div className={Styles.eventContent}>
+                  <div className={Styles.hot2}>{t('event.hot')}</div>
+                      <div className= "eventTitle">
+                          <div className={Styles.megaHeading2}>mega</div>
+                          <div className={Styles.megaHeading2}>ideahack</div>
+                      </div>
+                      
+                      <div className={Styles.date}>2023.7.22 - 24</div>
+                      <div className={Styles.date}>{t('event.city')}</div>
+                      <div className={Styles.div3Buttons}>
+                          <div className={Styles.div3signUp} onClick={handleSignUp}>{t('event.signup')}</div>
+                          <div className={Styles.div3LearnMore}  onClick={()=>window.open("https://digitalstorytelling2023.megahack.tech/", '_blank')}>{t('event.learnmore')}</div>
+                      </div>
+              </div>
+          </div>
+          
+          <div className={Styles.eventCards}>
+              <div className={Styles.eventCard}>
+                  <div className={Styles.eventImage}>
+                      <img src="/image-2@2x.png" alt="img" />
+                  </div>
+                  <div className={Styles.eventBar}>
+                      <div className={Styles.eleft}>{t('event.cardbar1')}</div>
+                      <div className={Styles.eright}>AI/ML</div>
+                  </div>
+                  <div className={Styles.cardContent2}>
+                      <div className={Styles.cardHead2}>{t('event.cardhead1')}</div>
+                      <div className={Styles.cardText2}>{t('event.cardtext1')}</div>
+                  </div>
+                  <div className={Styles.div3LearnMore2}>{t('event.learnmore')}</div>
+              </div>
+              <div className={Styles.eventCard}>
+                  <div className={Styles.eventImage}>
+                      <img src="/image-3@2x.png" alt="img" />
+                  </div>
+                  <div className={Styles.eventBar2}>
+                      <div className={Styles.eleft}>{t('event.cardbar2')}</div>
+                      <div className={Styles.eright}>Competitiveness</div>
+                  </div>
+                  <div className={Styles.cardContent2}>
+                      <div className={Styles.cardHead2}>{t('event.cardhead2')}</div>
+                      <div className={Styles.cardText2}>{t('event.cardtext2')}</div>
+                  </div>
+                  <div className={Styles.div3LearnMore2}  onClick={()=>window.open("https://hack2023.megahack.tech/", '_blank')}>{t('event.learnmore')}</div>
+              </div>
+          </div>
+          <div className={Styles.eventMore}>
+              <div className={Styles.more} onClick={()=>navigate('/Events')}>{t('event.more')}</div>
+          </div>
+          </div>
 
             {/* Sponsor-Section */}
 
@@ -249,21 +249,21 @@ function Homepage() {
             </div>
 
 
-            {/* ContactUs-Section */}
-            <div className={Styles.contactUs}>
-                <div className={Styles.contactContent}>
-                    <div align="center">
-                        <div className={Styles.contactHead}>{t('contact.contacthead')}</div>
-                    </div>
-
-                    <div className={Styles.contactQR}>
-                        <img src="/Group 21.png" alt="qr code" />
-                    </div>
-                    <div className={Styles.copyright}>© 2023 MEGA League. All Rights Reserved</div>
-                    <div className={Styles.email}>megachinaoffical@gmail.com</div>
+          {/* ContactUs-Section */}
+          <div className={Styles.contactUs}>
+              <div className={Styles.contactContent}>
+                <div>
+                  <div className={Styles.contactHead}>{t('contact.contacthead')}</div>
                 </div>
-            </div>
-
+                
+                <div className={Styles.contactQR}>
+                  <img src="/Group 21.png" alt="qr code" />
+                </div>
+                <div className={Styles.copyright}>© 2023 MEGA League. All Rights Reserved</div>
+                <div className={Styles.email}>megachinaoffical@gmail.com</div>
+              </div>
+          </div>
+          
 
         </>
     )
