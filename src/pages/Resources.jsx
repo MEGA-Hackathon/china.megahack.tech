@@ -1,7 +1,7 @@
 import React from 'react';
 import Styles from './Resources.module.css'; // Import your CSS module here
 import ExpandableDiv from './ExpandableDiv'; // Import the ExpandableDiv component here
-
+import Card from './Card';
 function Resources() {
     // Data for each row
     const rowData = ["Home page", "About us", "Events", "Contact us"];
@@ -24,6 +24,24 @@ function Resources() {
         { title: 'Can I participate as a teaching assistant/guest?', content: "Welcome to send your resume to megachinaoffical@gmail.com, we will get back to you within a week! Look forward to your joining." },
 
     ]
+
+    const cardData = [
+        {
+            imageUrl: '/vector4.svg',
+            title: 'Who are we?',
+            text: "In 2019, a group of innovators from the world's top universities in the United States at Princeton founded MEGA: areas including but not limited to, technology, engineering, design, art, business, social and natural sciences.",
+        },
+        {
+            imageUrl: '/Vector.png',
+            title: 'What do we do?',
+            text: "MEGA aims to encourage and assist outstanding young people to explore their potential, explore diverse cognition, and develop valuable and influential project products that are oriented towards solving real problems through their own abilities and with the support of MEGA.",
+        },
+        {
+            imageUrl: '/union.svg',
+            title: 'What do we do?',
+            text: "MEGA has set up implementation sites around the world and is supported by more than 30 businesses, technology companies and ngos. Members innovate and collaborate in areas such as the environment, education and healthcare to provide viable solutions, and have received financial support and internship opportunities.",
+        },
+    ];
 
     // Your expandableWithColumns array
     const expandableWithColumns = [
@@ -85,7 +103,17 @@ function Resources() {
                     <ExpandableDiv className={Styles.expandableDivColumn} key={index} title={data.title} text={data.content} />
                 ))}
             </div>
-
+            <div className={Styles.cardDivContainer}>
+                {/* Use a loop to render the cards */}
+                {cardData.map((card, index) => (
+                    <Card
+                        key={index}
+                        imageUrl={card.imageUrl}
+                        title={card.title}
+                        text={card.text}
+                    />
+                ))}
+            </div>
         </div>
     );
 }

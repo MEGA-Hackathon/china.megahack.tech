@@ -78,3 +78,14 @@
     box-sizing: border-box;
     padding: 20px;
   }
+
+  .cardDivContainer {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 900px;
+    top: 1000px; /* Adjust the top position to move the container down */
+    left: 183px;
+    gap: 20px;
+  }
