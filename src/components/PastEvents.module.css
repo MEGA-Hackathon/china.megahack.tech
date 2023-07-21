@@ -117,8 +117,10 @@
   }
 
   .cardHead2 {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    text-align:justify;
     font-weight: bold;
+    font-family: 'Abel', sans-serif;
   }
   
   .cardText2 {
