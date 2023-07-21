@@ -1,0 +1,10 @@
+.parent-container{
+    height: 60vh;
+  }
+  
+  .child-container{
+    width: 100%;
+    display: block;
+   height: 100%;
+   /* padding: 2rem; */
+  }

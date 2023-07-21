@@ -49,10 +49,16 @@ i18n
               learnmore: "Learn more",
               cardbar1: "Studio",
               cardbar2: "Hackathon",
+              cardbar3: "Hackathon",
+              cardbar4: "Debate",
               cardhead1: "Use AI to tell digital stories",
               cardhead2: "MEGA HACKATHON 2023",
+              cardhead3: "MEGA HACKATHON 2022",
+              cardhead4: "MEGA International Debate 2023",
               cardtext1: "MEGA teamed up with Columbia doctoral students and professors from Love and the Future to educate young people about the importance of digital storytelling through this transformative course on artificial intelligence and its impact on the climate.",
               cardtext2: "Like last year, the MEGA Hackathon hosted another hackathon event in 2023 that focused on real-world issues.",
+              cardtext3:"Our first annual super hackathon. That's great! The winner receives an internship and a prize of more than $50,000.",
+              cardtext4:"The MEGA Hackathon is hosting its first annual debate. The debate will focus on UN Sustainable Development Goals like hackathons.",
               more: "more"
             },
             contact: {
@@ -107,10 +113,16 @@ i18n
               learnmore: "了解更多",
               cardbar1: "工作室",
               cardbar2: "黑客马拉松",
+              cardbar3:"黑客马拉松",
+              cardbar4:"辩论",
               cardhead1: "运用人工智能讲述数字故事",
               cardhead2: "MEGA黑客马拉松2023",
+              cardhead3:"MEGA黑客马拉松2022",
+              cardhead4:"MEGA国际辩论2022",
               cardtext1: "MEGA与哥伦比亚大学博士生和Love and the Future的教授合作，通过这门关于人工智能及其对气候影响的变革性课程，教育年轻人了解数字叙事的重要性。",
               cardtext2: "与去年一样，MEGA在2023年举办了另一场聚焦现实问题的黑客马拉松活动。",
+              cardtext3:"我们的第一届年度超级黑客马拉松。那太棒了！获胜者将获得实习机会和超过 50,000 美元的奖金。",
+              cardtext4:"MEGA Hackathon 即将举办首次年度辩论。辩论将重点关注黑客马拉松等联合国可持续发展目标",
               more: "更多"
             },
             contact: {
