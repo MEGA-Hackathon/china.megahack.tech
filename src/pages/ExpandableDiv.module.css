@@ -2,6 +2,7 @@
     border: 2px dashed #9747FF;
     border-radius: 5px;
     padding: 10px;
+    height: 100%;
     cursor: pointer;
     width: 415px; /* Set a maximum width for the div container */
   }
