@@ -1,5 +1,6 @@
 .parent-container{
     height: 30vh;
+    font-family: var(--font-space-mono);
   }
   
   .child-container{
