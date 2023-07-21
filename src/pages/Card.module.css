@@ -1,0 +1,43 @@
+/* Styles for the card */
+.card {
+    text-align: center;
+    width: 314px; /* Adjust the card width as needed */
+    height: 463px;
+    border: 1px solid #ccc;
+    border-radius: 150px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    font-family: var(--font-space-mono);
+  }
+  
+  /* Styles for the image */
+  .image {
+    width: 66px;
+    height: 66px; /* Adjust the image height as needed */
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  /* Styles for the title */
+  .title {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    font-size: 24;
+
+  }
+  
+  /* Styles for the text */
+  .text {
+    margin-top: 10px;
+    font-size: 20;
+  }
+
+  .card:hover {
+    background-color: #000000;
+    background-image: linear-gradient(180deg, #000000 0%, #ffffff 90%);
+    transition: background-color 0.3s ease; /* Add transition for smooth effect */
+    color: #FFFFFF;
+  }
