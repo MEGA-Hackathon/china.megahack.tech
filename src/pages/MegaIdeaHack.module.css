@@ -6,6 +6,10 @@
     letter-spacing: 1px;
 }
 
+.snakeMobile{
+  display: none;
+}
+
 .snakeText1{
     width: 38vh;
     position: absolute;
@@ -78,7 +82,7 @@
 
 .megaIdeaHackDiv {
     margin-top: 95vh;
-    position: absolute; /* Change position to relative */
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,6 +119,74 @@
     box-shadow: 191px -95px 0px 0px rgba(127,94,221,1);
   }
 
+  .snakeImg img{
+    height: 20vh;
+  }
+  .snakeImg{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .snakeText{
+    padding: 15px 38px;
+    font-size: 0.95rem;
+  }
+
+  @media screen and (max-width: 768px){
+    .snakeDiv{
+      margin-top: 4vh;
+    }
+
+     .snakeMobile{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+     }
+     .snake{
+      display: none;
+     }
+
+     .megaIdeaHackImg img{
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+     }
+
+     .megaIdeaHackDiv {
+      margin-top: 5vh;
+      position: none;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .megaIdeaHack {
+      background-color: transparent;
+      padding: 10px;
+      position: none; 
+      margin-top:5vh;
+      text-align: center;
+    }
+    
+    .megaIdeaHackHead {
+      font-weight:300;
+      font-size: 2rem;
+      letter-spacing: 4px;
+      padding-bottom: 30px;
+    }
+    
+    .megaIdeaHackImg{
+      padding-left: 4vh;
+      padding-right: 4vh;
+      background-color: transparent;
+      border-radius: 20px;
+      margin-bottom: 5vh;
+    }
+    .megaIdeaHackImg img{
+      width: 100%;
+      height: 100%;
+    }
+
+  }
+
   .goals {
     display: flex;
     flex-direction: column;
@@ -146,6 +218,22 @@
     color: rgb(141, 141, 141);
     padding-left: 34vh;
     font-size: 0.8rem;
+  }
+  
+  @media (max-width: 768px) {
+    .goals {
+      width: 90%; /* Adjust the width to take up more space on smaller screens */
+      margin-top: 45vh; /* Reduce the top margin for better spacing on smaller screens */
+    }
+  
+    .goalsText {
+      padding: 0 15px; /* Reduce the padding on left and right for better text readability */
+    }
+  
+    .goalsTag {
+      padding-left: 0; /* Remove left padding for better alignment on mobile */
+      text-align: center; /* Center align the text on mobile */
+    }
   }
   
   
@@ -195,30 +283,98 @@
     height: 70vh;
   }
 
-  .college_images {
-    display: flex;
-    margin: auto;
-    width: 59%;
-    margin-top: 8vh;
-    flex-direction: column;
-  }
+  @media (max-width: 768px) {
+    .circleDiv {
+      flex-direction: column; 
+      align-items: center; 
+      margin-left: 5vh; 
+      margin-right: 5vh; 
+      padding-top: 15vh;
+    }
   
-  .college_image img {
-    height: 45vh;
-    max-width: 100%;
+    .circleText{
+      width: 100%; 
+      margin-left: 0; 
+      text-align: center; 
+      font-size: 0.8rem; 
+      line-height: 1.6; 
+      margin-bottom: 2vh; 
+      padding-left: 25px;
+      margin-right: 25px;
+    }
+    .circleText div{
+      margin-bottom: 5vh;
+    }
+  
+    .circleCards {
+      margin-left: 0;
+      margin-top: 0vh; 
+      padding-right: 15px;
+    }
+  
+    .circleCards img {
+      height: auto; 
+      width: 100%; 
+    }
+
+      .college_images {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .college_image {
+        margin: 20px 0;
+      } 
   }
 
-  .colleges{
-        color: rgb(145, 145, 145);
-        font-size: 0.6rem;
-        font-family: var(--font-poppins);
-        letter-spacing: 0.8px;
-        margin-bottom: 18px;
+ /* Default styles */
+.college_images {
+  display: flex;
+  margin-top: 8vh;
+  flex-direction: column;
+  margin-bottom: 8vh;
+}
+
+.college_image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.college_image {
+  margin: 30px 35vh;
+}
+
+.colleges{
+  font-size: 0.8rem;
+  font-family: var(--font-space-mono);
+  text-align: center;
+  color:gray;
+
+}
+
+/* Responsive styles */
+/* For screens with a width of 768px or less */
+@media (max-width: 768px) {
+  .college_images {
+    flex-direction: column;
+    align-items: center;
   }
+
+  .college_image {
+    margin: 20px auto; /* Center the image horizontally */
+    padding: 0 20px; /* Add some padding on the sides to prevent overflow */
+  }
+  .colleges{
+    padding: 2px 15px;
+    font-size: 0.6;
+  }
+}
+
   
   .coffee_chat{
     display: contents;
     text-align: center;
+    font-family: var(--font-space-mono);
   }
 
   .coffee_shapes{
@@ -227,25 +383,268 @@
   }
   .coffee_shape img{
     height:10vh;
+    margin-right: 10px;
+  }
+  .coffeeText{
+    margin: 30px 50vh;
+    font-size: 0.8rem;
+    line-height: 2.4;
+    text-align: justify;
   }
 
-
-  .partners{
-    text-align: center;
-    font-family: var(--font-space-mono);
+  .coffeeButtons {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 30vh;
+    margin-right: 14vh;
+    flex-wrap: wrap;
+    margin-bottom: 5vh;
+  }
+  
+  .coffeeButtons div {
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    width: calc(28% - 10px); 
+    height: 50px; 
+    background-color: #96A2FF;
+    border-radius: 999px;
+    padding: 5px 7px;
+    margin: 5px; 
+    font-size: 0.8rem;
   }
 
-  .past_partners{
+  @media (max-width: 768px) {
+    .coffee_shapes {
+      width: 80%;
+    }
+  
+    .coffee_shape img {
+      height: 5vh;
+      margin-right: 5px;
+    }
+  
+    .coffeeText {
+      margin: 30px 35px;
+      font-size: 0.7rem;
+    }
+  
+    .coffeeButtons {
+      margin-left: 5%;
+      margin-right: 5%;
+      display: flex;
+      flex-wrap: none;
+      justify-content: center;
+    }
+  
+    .coffeeButtons div {
+      width: calc(40% - 10px);
+      height: 24px;
+      font-size: 0.5rem;
+    }
+  }
+  
+  /* Default styles */
+.ending {
+  text-align: center;
+  font-family: var(--font-space-mono);
+  margin: 30px 50vh;
+  margin-top: 15vh;
+}
+
+.endingHead {
+  font-size: 1.6rem;
+  color: var(--color-mediumslateblue-100);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.endingText {
+  font-size: 0.9rem;
+  line-height: 1.9;
+  text-align:justify;
+  margin-bottom: 30px;
+}
+
+.endingYellow {
+  color: #A9AB00;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.endingYellow div {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.endingSignup {
+  margin-top: 3vh;
+  margin-bottom: 5vh;
+  display: inline-block;
+  background-color: #FFD000;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.endingSignup:hover {
+  background-color: #ffe263;
+}
+
+/* Responsive styles */
+/* For screens with a width of 768px or less */
+@media (max-width: 768px) {
+  .ending {
+    margin: 30px 50px;
+  }
+
+  .endingHead {
     font-size: 1.3rem;
   }
 
-  .partner_image img{
-    padding-top: 5vh;
-    height: 90vh;
+  .endingText {
+    font-size: 0.7rem;
   }
 
-  .looking_forward{
-    padding-top: 8vh;
-    padding-bottom: 8vh;
-    font-size: 1.4rem;
+  .endingSignup {
+    font-size: 0.9rem;
+    padding: 8px 15px;
   }
+}
+
+/* Default styles */
+.FAQ {
+  text-align: center;
+  font-family: var(--font-space-mono);
+  margin-top: 18vh;
+}
+
+
+.ans {
+}
+
+.FAQhead {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+.questions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px 30vh;
+}
+
+.question {
+  width: 40%; /* Two questions per row, adjust width as needed */
+  background-color: #f9f9f9;
+  border-radius: 25px;
+  padding: 10px 25px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.qtext {
+  flex: 1;
+  font-size: 0.7rem;
+  text-align: left;
+}
+
+.arrow {
+  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.arrow img{
+  height: 2vh;
+}
+
+
+
+.moreQ {
+  margin-top: 30px;
+  font-size: 0.8rem;
+}
+
+/* Responsive styles */
+/* For screens with a width of 768px or less */
+@media (max-width: 768px) {
+  .FAQ {
+    margin-top: 10vh;
+  }
+
+  .FAQhead {
+    font-size: 1.3rem;
+  }
+
+  .question {
+    width: 90%;
+  }
+
+  .moreQ {
+    font-size: 0.7rem;
+  }
+}
+
+
+
+/* Default styles */
+.partners {
+  text-align: center;
+  font-family: var(--font-space-mono);
+  margin-top: 18vh;
+}
+
+.past_partners {
+  font-size: 1.2rem;
+}
+
+.partner_image img {
+  padding-top: 5vh;
+  height: 90vh;
+  max-width: 100%;
+}
+
+.looking_forward {
+  padding-top: 14vh;
+  padding-bottom: 8vh;
+  font-size: 1.1rem;
+}
+
+/* Responsive styles */
+/* For screens with a width of 768px or less */
+@media (max-width: 768px) {
+  .partners {
+    margin-top: 10vh;
+  }
+
+  .past_partners {
+    font-size: 1rem;
+    
+  }
+
+  .partner_image{
+    padding: 10px 40px;
+  }
+  .partner_image img {
+    height: auto;
+    padding-top: 3vh;
+
+  }
+
+  .looking_forward {
+    padding-top: 8vh;
+    padding-bottom: 4vh;
+    font-size: 0.6rem;
+    padding: 10px 40px;
+  }
+}
