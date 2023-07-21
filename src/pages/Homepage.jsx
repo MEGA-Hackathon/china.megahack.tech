@@ -38,6 +38,11 @@ function Homepage() {
         console.log('Navigating to Events');
       };
 
+      const navigateToMegaIdeaHack = () => {
+        navigate('/MegaIdeaHack')
+        console.log('Navigating to Events');
+      }
+
     const scrollToBottom = () => {
         window.scrollTo({
           top: document.documentElement.scrollHeight,
@@ -109,7 +114,7 @@ function Homepage() {
                         
                     <div className={Styles.div1signUp} onClick={handleSignUp}>{t('heroSection.signup')}</div>
                     
-                    <div className={Styles.div1LearnMore}>{t('heroSection.learnmore')}</div>
+                    <div className={Styles.div1LearnMore} onClick={navigateToMegaIdeaHack}>{t('heroSection.learnmore')}</div>
                     </div>
 
                 </div>
