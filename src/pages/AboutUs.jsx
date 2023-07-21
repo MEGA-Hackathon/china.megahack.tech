@@ -12,7 +12,7 @@ function AboutUs() {
     i18n.changeLanguage(lng);
   }, []);
 
-  // const lng = navigator.language;
+  const lng = navigator.language;
 
   return (
     <>
