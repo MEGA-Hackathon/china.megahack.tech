@@ -2,6 +2,7 @@ import Navbar from '../components/Navbar';
 import ContactUs from '../components/ContactUs';
 import PastEvents from '../components/PastEvents';
 import Styles from "./Homepage.module.css";
+import "./Events.css";
 import { useTranslation } from "react-i18next";
 
 function Events() {
@@ -12,10 +13,10 @@ function Events() {
   };
   
   return (
-    <>
+    <div className='parent-container'>
     <Navbar/>
-    <PastEvents />
-      <div className={Styles.div1Content}>
+    <div className='child-container'>       
+      <div className={Styles.div1Content} style={{ paddingTop: '10rem', paddingBottom: '10rem'}}>
         <div className={Styles.hot}>{t("heroSection.hot")}</div>
         <div className={Styles.megaHeading}>mega</div>
         <div className={Styles.megaHeading}>ideahack</div>
@@ -37,9 +38,11 @@ function Events() {
           <img src="/poster.png" alt="poster" />
         </div>
       </div>
+      </div> 
+    <PastEvents />
       
       <ContactUs />
-    </>
+    </div>
   );
 }
 
