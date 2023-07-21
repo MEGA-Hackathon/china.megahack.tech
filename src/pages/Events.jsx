@@ -13,12 +13,14 @@ function Events() {
   return (
     <>
       <Navbar />
-      <div className={Styles.div1Content}>
-        <div className={Styles.hot}>{t("heroSection.hot")}</div>
+
+
+      <div className={Styles.div1Events}>
+        <div className={Styles.hot}>{t("event.hot")}</div>
         <div className={Styles.megaHeading}>mega</div>
         <div className={Styles.megaHeading}>ideahack</div>
         <div className={Styles.megaHeading}>202307</div>
-        <div className={Styles.div1Text}>{t("heroSection.text")}</div>
+        <div className={Styles.div1Text}>{t("event.text")}</div>
         <div className={Styles.div1Buttons}>
           <div className={Styles.div1signUp} onClick={handleSignUp}>
             {t("heroSection.signup")}
@@ -35,6 +37,8 @@ function Events() {
           <img src="/poster.png" alt="poster" />
         </div>
       </div>
+
+
       <ContactUs />
     </>
   );
