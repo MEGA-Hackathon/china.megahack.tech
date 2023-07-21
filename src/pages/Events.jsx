@@ -19,8 +19,8 @@ function Events() {
     <div className='parent-container'>
     <Navbar/>
     <div className='child-container'>       
-      <div className={Styles.div1Content} style={{ paddingTop: '10rem', paddingBottom: '10rem'}}>
-        <div className={Styles.hot}>{t("heroSection.hot")}</div>
+      <div className={Styles.div1Content} style={{ paddingBottom: '10rem'}}>
+        <div className={Styles.hot} style={{color: 'black'}}>Upcoming Event</div>
         <div className={Styles.megaHeading}>mega</div>
         <div className={Styles.megaHeading}>ideahack</div>
         <div className={Styles.megaHeading}>202307</div>
