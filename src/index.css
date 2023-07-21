@@ -6,6 +6,7 @@
 body {
   margin: 0;
   line-height: normal;
+  text-align: justify;
 }
 :root {
   /* fonts */

@@ -160,15 +160,15 @@ function Homepage() {
                     </div>
                     </div>
                 </div>
-                <div >
-                <div className={Styles.learnMore}>{t('intro.learnmore')}</div>
+                <div align="center">
+                <div className={Styles.learnMore} >{t('intro.learnmore')}</div>
                 </div>
                 
             </div>
 
           {/* Events-Section */}
 
-          <div className={Styles.eventHead} >
+          <div className={Styles.eventHead} align="center" >
           <div>
               <div className={Styles.eventTitle}>Events</div>
               <div className={Styles.activity}>{t('event.activity')}</div>
@@ -192,7 +192,7 @@ function Homepage() {
                       <div className={Styles.date}>{t('event.city')}</div>
                       <div className={Styles.div3Buttons}>
                           <div className={Styles.div3signUp} onClick={handleSignUp}>{t('event.signup')}</div>
-                          <div className={Styles.div3LearnMore}  onClick={()=>window.open("https://digitalstorytelling2023.megahack.tech/", '_blank')}>{t('event.learnmore')}</div>
+                          <div className={Styles.div3LearnMore}  onClick={navigateToMegaIdeaHack}>{t('event.learnmore')}</div>
                       </div>
               </div>
           </div>
@@ -210,7 +210,7 @@ function Homepage() {
                       <div className={Styles.cardHead2}>{t('event.cardhead1')}</div>
                       <div className={Styles.cardText2}>{t('event.cardtext1')}</div>
                   </div>
-                  <div className={Styles.div3LearnMore2}>{t('event.learnmore')}</div>
+                  <div className={Styles.div3LearnMore2} onClick={()=>window.open("https://digitalstorytelling2023.megahack.tech", '_blank')}>{t('event.learnmore')}</div>
               </div>
               <div className={Styles.eventCard}>
                   <div className={Styles.eventImage}>
@@ -242,7 +242,7 @@ function Homepage() {
           {/* ContactUs-Section */}
           <div className={Styles.contactUs}>
               <div className={Styles.contactContent}>
-                <div>
+                <div align="center">
                   <div className={Styles.contactHead}>{t('contact.contacthead')}</div>
                 </div>
                 

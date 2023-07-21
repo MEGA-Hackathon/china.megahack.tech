@@ -540,12 +540,14 @@
 
   .cardHead2 {
     font-size: 0.9rem;
+    /* text-align: justify; */
     font-weight: bold;
   }
   
   .cardText2 {
     font-size: 0.6rem;
     margin-top: 5px;
+    /* text-align: justify; */
     color: rgb(183, 183, 183);
     font-family: var(--font-space-mono);
   }

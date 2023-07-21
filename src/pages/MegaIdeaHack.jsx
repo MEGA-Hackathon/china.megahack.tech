@@ -17,6 +17,10 @@ function MegaIdeaHack() {
 
     const [visible, setVisible] = useState(false);
 
+    const handleSignUp = () => {
+        window.open("https://mega-hackathon-2023-summer.devpost.com/", '_blank');
+      };
+
 
     return (
     <>
@@ -173,7 +177,7 @@ function MegaIdeaHack() {
                 <div>{t('idea.endingyellow1')}</div>
                 <div>{t('idea.endingyellow2')}</div>
             </div>
-            <div className={Styles.endingSignup}>
+            <div className={Styles.endingSignup} onClick={handleSignUp}>
                 {t('idea.signup')}
             </div>
             </div>
