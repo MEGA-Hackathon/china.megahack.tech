@@ -2,7 +2,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Homepage from "./pages/Homepage";
 import AboutUs from './pages/AboutUs';
 import Events from './pages/Events';
-import Resources from './pages/Resources';
+import Resources from './pages/Resources'
+import MegaIdeaHack from './pages/MegaIdeaHack'
 import './index.css'
 
 function App() {
