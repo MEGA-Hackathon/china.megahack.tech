@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 import { useNavigate } from 'react-router-dom';
 
 
-export default function Events() {
+function Events() {
   const { t } = useTranslation();
   const navigate=useNavigate()
 
@@ -16,16 +16,15 @@ export default function Events() {
   };
   
   return (
-    <>
-      <Navbar />
-      
+    <div className='parent-container'>
+    <Navbar/>
     <div className='child-container'>       
       <div className={Styles.div1Content}>
         <div className={Styles.hot} style={{color: 'black'}}>Upcoming Event</div>
         <div className={Styles.megaHeading}>mega</div>
         <div className={Styles.megaHeading}>ideahack</div>
         <div className={Styles.megaHeading}>202307</div>
-        <div className={Styles.div1Text}>{t("event.text")}</div>
+        <div className={Styles.div1Text}>{t("heroSection.text")}</div>
         <div className={Styles.div1Buttons}>
           <div className={Styles.div1signUp} onClick={handleSignUp}>
             {t("heroSection.signup")}
@@ -42,9 +41,12 @@ export default function Events() {
           <img src="/poster.png" alt="poster" />
         </div>
       </div>
+      </div> 
+    <PastEvents />
+      
       <ContactUs />
     </div>
   );
 }
 
-
+export default Events;
