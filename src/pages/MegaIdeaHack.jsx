@@ -92,6 +92,22 @@ function MegaIdeaHack() {
         </div>
         </div>
 
+        
+        <div className={Styles.coffee_chat}>
+            <div className={Styles.coffee_shapes}>
+                <div className={Styles.coffee_shape}>
+                    <img src= "/Vector (1).svg" alt = "Star"/>
+                    <img src= "/Vector (2).svg" alt = "Triangle"/>
+                    <img src= "/Vector (3).svg" alt = "Stairs"/>
+                </div>
+            </div>
+        </div>
+
+        <div className={Styles.partners}>
+            <div className={Styles.past_partners}>Past partners</div>
+            <div className={Styles.partner_image}><img src="/image 24.svg" alt="Past Partners"/></div>
+            <div className={Styles.looking_forward}>Looking forward to seeing you in the summer, <br/>MEGA Team</div>
+        </div>
         <ContactUs/>
     </>
     )

@@ -216,3 +216,36 @@
         margin-bottom: 18px;
   }
   
+  .coffee_chat{
+    display: contents;
+    text-align: center;
+  }
+
+  .coffee_shapes{
+    margin: auto;
+    width: 50%;
+  }
+  .coffee_shape img{
+    height:10vh;
+  }
+
+
+  .partners{
+    text-align: center;
+    font-family: var(--font-space-mono);
+  }
+
+  .past_partners{
+    font-size: 1.3rem;
+  }
+
+  .partner_image img{
+    padding-top: 5vh;
+    height: 90vh;
+  }
+
+  .looking_forward{
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+    font-size: 1.4rem;
+  }
