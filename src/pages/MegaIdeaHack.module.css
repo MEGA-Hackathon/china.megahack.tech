@@ -1,0 +1,218 @@
+.snakeDiv{
+    margin-top: 18vh;   
+    font-family: var(--font-space-mono);
+    height: 160vh;
+    font-size:0.9rem;
+    letter-spacing: 1px;
+}
+
+.snakeText1{
+    width: 38vh;
+    position: absolute;
+    left: 22%;
+    line-height: 1.6;
+}
+
+.snakeText2{
+    width: 90vh;
+    position: absolute;
+    left: 46%;
+    top: 37%;
+    line-height: 1.6;
+}
+
+.snakeText3{
+    width: 40vh;
+    position: absolute;
+    left: 21%;
+    top: 55%;
+    line-height: 1.6;
+}
+
+.snakeText4{
+    width: 48vh;
+    position: absolute;
+    left: 50%;
+    top: 73%;
+    line-height: 1.6;
+}
+
+.snakeImg1 img{
+    width: 30vh;
+}
+.snakeImg2 img{
+    width: 47vh;
+}
+.snakeImg3 img{
+    width: 50vh;
+}
+.snakeImg4 img{
+    width: 54vh;
+    height: 60;
+    
+}
+
+.snakeImg1{
+    position: absolute;
+    margin-top: 5vh;
+    margin-left: 82vh;
+}
+
+.snakeImg2{
+    position: absolute;
+    margin-top: 30vh;
+    margin-left: 65vh;
+}
+
+.snakeImg3{
+    position: absolute;
+    margin-top: 49vh;
+    margin-left: 65vh;
+}
+
+.snakeImg4{
+    position: absolute;
+    margin-top: 68vh;
+    margin-left: 64vh;
+}
+
+.megaIdeaHackDiv {
+    margin-top: 95vh;
+    position: absolute; /* Change position to relative */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .megaIdeaHack {
+    background-color: transparent;
+    padding: 10px;
+    position: relative; 
+    top: 50%;
+    left: 42.5%;
+    transform: translate(-50%, -50%);
+    margin-top:25vh;
+  }
+  
+  .megaIdeaHackHead {
+    font-weight:300;
+    font-size: 3.5rem;
+    letter-spacing: 4px;
+    padding-bottom: 30px;
+  }
+  
+  .megaIdeaHackImg{
+    padding-left: 15vh;
+    background-color: transparent;
+    border-radius: 20px;
+  }
+
+  .megaIdeaHackImg img {
+    height: 65vh;
+    border-top-right-radius: 20px;
+    -webkit-box-shadow: 191px -95px 0px 0px rgba(127,94,221,1);
+    -moz-box-shadow: 191px -95px 0px 0px rgba(127,94,221,1);
+    box-shadow: 191px -95px 0px 0px rgba(127,94,221,1);
+  }
+
+  .goals {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 18vh;
+    font-family: var(--font-space-mono);
+  }
+  
+  .goalsText {
+    text-align: justify;
+    font-size:1rem;
+    padding-left: 35px;
+    padding-right: 35px;
+    line-height: 1.6;
+  }
+  
+  .goalsImg {
+    text-align: center;
+  }
+  .goalsImg img{
+    width: 100%;
+  }
+  
+  .goalsTag {
+    margin-top: 10px;
+    color: rgb(141, 141, 141);
+    padding-left: 34vh;
+    font-size: 0.8rem;
+  }
+  
+  
+  .circleDiv {
+    display: flex;
+    margin-left: 10vh;
+    position: relative;
+    margin-top: 15vh;
+    padding-top: 28vh;
+  }
+  
+  .yellow {
+    position: absolute;
+    left: -35vh;
+    top: 0;
+  }
+  .circle{
+    height: 550px;
+    width: 550px;
+    background-color: rgba(255, 208, 0, 0.2);
+    border-radius: 100%;
+  }
+  
+
+  
+  .circleText {
+    margin-left: 20px;
+    width: 48%;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    line-height: 2.2;
+    font-family: var(--font-space-mono);
+    color: black;
+    font-weight: 500;
+  }
+  
+  .circleText div {
+    margin-bottom: 12vh;
+  }
+  
+  .circleCards {
+    margin-left: 100px;
+    margin-top: 10vh;
+  }
+  
+  .circleCards img {
+    height: 70vh;
+  }
+
+  .college_images {
+    display: flex;
+    margin: auto;
+    width: 59%;
+    margin-top: 8vh;
+    flex-direction: column;
+  }
+  
+  .college_image img {
+    height: 45vh;
+    max-width: 100%;
+  }
+
+  .colleges{
+        color: rgb(145, 145, 145);
+        font-size: 0.6rem;
+        font-family: var(--font-poppins);
+        letter-spacing: 0.8px;
+        margin-bottom: 18px;
+  }
+  
