@@ -2,6 +2,7 @@ import { BrowserRouter,Route,Routes } from 'react-router-dom';
 import Homepage from "./pages/Homepage";
 import AboutUs from './pages/AboutUs';
 import Events from './pages/Events';
+import MegaIdeaHack from './pages/MegaIdeaHack'
 import './index.css'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Route path="/" element={<Homepage />} />
       <Route path="/AboutUs" element={<AboutUs />} />
       <Route path="/Events" element={<Events />} />
+      <Route path="/MegaIdeaHack" element={<MegaIdeaHack />} />
     </Routes>
     </BrowserRouter>
     
