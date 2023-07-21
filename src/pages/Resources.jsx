@@ -25,15 +25,12 @@ function Resources() {
 
     ]
 
+    // Your expandableWithColumns array
     const expandableWithColumns = [
-        ExpandableData.slice(0, 2),
-        ExpandableData.slice(2, 4),
-        ExpandableData.slice(4, 6),
-
-    ]
-
-    // Calculate the total height based on the number of rectangles and the height of each row
-    const totalHeight = Math.ceil(rectanglesData.length / 2) * 48; // 48px is the height between each row
+        [ExpandableData[0], ExpandableData[1]],
+        [ExpandableData[2], ExpandableData[3]],
+        [ExpandableData[4], ExpandableData[5]],
+    ];
 
     // Rearrange the rectangles to match the desired layout
     const rectanglesWithColumns = [
@@ -83,13 +80,9 @@ function Resources() {
                 ))}
             </div>
             <div className={Styles.expandableDivContainer}>
-                {/* Render the ExpandableDiv components dynamically in columns */}
-                {expandableWithColumns.map((columnData, columnIndex) => (
-                    <div key={columnIndex} className={Styles.expandableDivColumn}>
-                        {columnData.map((data, dataIndex) => (
-                            <ExpandableDiv key={dataIndex} title={data.title} text={data.content} />
-                        ))}
-                    </div>
+                {/* Render the ExpandableDiv components dynamically in rows and columns */}
+                {ExpandableData.map((data, index) => (
+                    <ExpandableDiv className={Styles.expandableDivColumn} key={index} title={data.title} text={data.content} />
                 ))}
             </div>
 

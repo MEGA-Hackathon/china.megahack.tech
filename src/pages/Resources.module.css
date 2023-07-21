@@ -62,17 +62,19 @@
   }
   .expandableDivContainer {
     position: relative;
-    display: flex; /* Use flexbox to align items horizontally */
-    flex-wrap: wrap; /* Allow items to wrap to the next row */
-    justify-content: space-between; /* Distribute items evenly along the container */
-    width: 566px; /* Adjust the width as needed */
-    top: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 900px;
+    top: 700px; /* Adjust the top position to move the container down */
     left: 183px;
+    gap: 20px;
+
   }
   
   /* Add styles for the columns */
   .expandableDivColumn {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px; /* Add some spacing between columns */
+    width: 50%; /* To make two items per row */
+    box-sizing: border-box;
+    padding: 20px;
   }

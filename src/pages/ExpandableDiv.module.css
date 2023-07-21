@@ -1,26 +1,33 @@
 .expandableDiv {
-    border: 1px solid #ccc;
+    border: 2px dashed #9747FF;
+    border-radius: 5px;
     padding: 10px;
     cursor: pointer;
-    max-width: 400px; /* Set a maximum width for the div container */
-
+    width: 415px; /* Set a maximum width for the div container */
   }
   
   .title {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-family: var(--font-space-mono);
+    font-size: 22;
   }
   
   .arrowUp::after {
     content: '▲';
+    color: #757575;
   }
   
   .arrowDown::after {
     content: '▼';
+    color: #757575;
   }
   
   .content {
     margin-top: 10px;
+    font-family: var(--font-space-mono);
+    font-size: 22;
+    color: #626161;
   }
   
