@@ -1,6 +1,7 @@
+
 import React, { useEffect, useState } from 'react'
 import Styles from './Homepage.module.css'
-import { useTranslation, Trans } from 'react-i18next';
+import { useTranslation, } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 
 function Homepage() {
@@ -12,12 +13,13 @@ function Homepage() {
 
     const { t, i18n } = useTranslation();
 
+
     useEffect(() => {
         const lng = navigator.language;
         i18n.changeLanguage(lng)
     }, [])
 
-    const lng = navigator.language
+    // const lng = navigator.language
 
     const handleSignUp = () => {
         window.open("https://mega-hackathon-2023-summer.devpost.com/", '_blank');
@@ -42,6 +44,11 @@ function Homepage() {
         navigate('/Resources')
         console.log('Navigate to Resources')
     }
+
+      const navigateToMegaIdeaHack = () => {
+        navigate('/MegaIdeaHack')
+        console.log('Navigating to Events');
+      }
 
     const scrollToBottom = () => {
         window.scrollTo({
@@ -115,6 +122,7 @@ function Homepage() {
                         <div className={Styles.div1signUp} onClick={handleSignUp}>{t('heroSection.signup')}</div>
 
                         <div className={Styles.div1LearnMore} onClick={navigateToAboutUs}>{t('heroSection.learnmore')}</div>
+
                     </div>
 
                 </div>
@@ -160,11 +168,13 @@ function Homepage() {
                         </div>
                     </div>
                 </div>
+
                 <div align="center">
                     <div className={Styles.learnMore} onClick={navigateToResources}>{t('intro.learnmore')}</div>
                 </div>
 
             </div>
+
 
             {/* Events-Section */}
 

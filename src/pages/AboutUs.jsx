@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import ContactUs from '../components/ContactUs';
 import Styles from './AboutUs.module.css';
@@ -13,6 +13,7 @@ function AboutUs() {
     const lng = navigator.language;
     i18n.changeLanguage(lng);
   }, []);
+
 
   const navigateToMegaWeb = () => {
     window.open("https://megahack.tech/")
