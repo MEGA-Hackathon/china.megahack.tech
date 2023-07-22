@@ -376,7 +376,7 @@
 
 .event {
     position: absolute;
-    margin-top: 175vh;
+    margin-top: 196vh;
     width: 100%;
     display: flex;
 }
@@ -426,7 +426,7 @@
 
 .eventHead {
    position: absolute;
-   margin-top: 155vh;
+   margin-top: 174vh;
    width: 100%;   
 }
 .eventTitle{
@@ -603,7 +603,7 @@
 
   .sponsors {
     position: absolute;
-    margin-top: 275vh;
+    margin-top: 303vh;
     left: 25%;
     height: 70vh;
     flex: 100px;
@@ -634,7 +634,7 @@
 
 .contactUs {
     position: absolute;
-    margin-top: 350vh;
+    margin-top: 372vh;
     height: 80vh;
     background-color: black;
     width: 100%;
@@ -651,6 +651,7 @@
     color: white;
     margin-top: 30px;
     margin-bottom: 20px;
+    text-align: center;
   }
   
   .contactQR img {

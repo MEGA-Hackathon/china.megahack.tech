@@ -121,7 +121,7 @@ function Homepage() {
 
                         <div className={Styles.div1signUp} onClick={handleSignUp}>{t('heroSection.signup')}</div>
 
-                        <div className={Styles.div1LearnMore} onClick={navigateToAboutUs}>{t('heroSection.learnmore')}</div>
+                        <div className={Styles.div1LearnMore} onClick={navigateToMegaIdeaHack}>{t('heroSection.learnmore')}</div>
 
                     </div>
 
@@ -202,7 +202,7 @@ function Homepage() {
                       <div className={Styles.date}>{t('event.city')}</div>
                       <div className={Styles.div3Buttons}>
                           <div className={Styles.div3signUp} onClick={handleSignUp}>{t('event.signup')}</div>
-                          <div className={Styles.div3LearnMore}  onClick={()=>window.open("https://digitalstorytelling2023.megahack.tech/", '_blank')}>{t('event.learnmore')}</div>
+                          <div className={Styles.div3LearnMore}  onClick={navigateToMegaIdeaHack}>{t('event.learnmore')}</div>
                       </div>
               </div>
           </div>
@@ -220,7 +220,7 @@ function Homepage() {
                       <div className={Styles.cardHead2}>{t('event.cardhead1')}</div>
                       <div className={Styles.cardText2}>{t('event.cardtext1')}</div>
                   </div>
-                  <div className={Styles.div3LearnMore2}>{t('event.learnmore')}</div>
+                  <div className={Styles.div3LearnMore2} onClick={()=>window.open("https://digitalstorytelling2023.megahack.tech/", '_blank')}>{t('event.learnmore')}</div>
               </div>
               <div className={Styles.eventCard}>
                   <div className={Styles.eventImage}>
