@@ -14,6 +14,10 @@
     font-family: var(--font-space-mono);
     font-size: 22;
   }
+
+  .title span{
+    padding-left: 10px;
+  }
   
   .arrowUp::after {
     content: '▲';

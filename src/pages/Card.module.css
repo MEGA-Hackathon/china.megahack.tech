@@ -2,7 +2,7 @@
 .card {
     text-align: center;
     width: 314px; /* Adjust the card width as needed */
-    height: 463px;
+    height: fit-content;
     border: 1px solid #ccc;
     border-radius: 150px;
     padding: 10px;
@@ -33,6 +33,8 @@
   .text {
     margin-top: 10px;
     font-size: 20;
+    margin-bottom: 40px;
+    padding: 0px 20px;
   }
 
   .card:hover {

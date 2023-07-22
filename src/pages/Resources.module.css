@@ -1,91 +1,126 @@
+/* Base styles */
 .pageContainer {
-    position: relative;
+  position: relative;
 }
-  
+
 .dashedBorderContainer {
-    position: absolute;
-    padding: 20px;
-    left: 183px;
-    top: 126px;
-    width: 566px;
-    height: auto;
-    border: 2px dashed #9747FF;
-    border-radius: 5px;
+  position: absolute;
+  padding: 20px;
+  left: 183px;
+  top: 126px;
+  width: 566px;
+  height: auto;
+  border: 2px dashed #9747FF;
+  border-radius: 5px;
 }
-  
-  .dashedBorderRow {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    margin-top: 0px;
-  }
-  
-  .item {
-    flex-basis: 130px; /* Add flex-basis to control spacing between items */
-    text-align: center;
-    padding: 5px;
-    font-family: var(--font-space-mono);
-    font-size: 14;
+
+.dashedBorderRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top: 0px;
 }
-  
-  .underline {
-    /* Add the special underline effect here */
-    color: #7F5EDD;
-    border-bottom: 2px solid #7F5EDD;
-  }
-  
-  .rectanglesContainer {
-    position: absolute;
-    left: 183px;
-    top: 450px; /* Adjust the top position to place the rectangles below the dashed border div */
-    width: 566px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .rectangleColumn {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 50%;
-  }
-  
-  .rectangle {
-    width: 100px;
-    height: 20px;
-    box-sizing: border-box;
-  }
-  
-  .text {
-    position: relative;
-    bottom: 18px;
-    text-align: center;
-  }
-  .expandableDivContainer {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 900px;
-    top: 700px; /* Adjust the top position to move the container down */
-    left: 183px;
-    gap: 20px;
 
-  }
-  
-  /* Add styles for the columns */
-  .expandableDivColumn {
-    width: 50%; /* To make two items per row */
-    box-sizing: border-box;
-    padding: 20px;
-  }
+.item {
+  flex-basis: 130px;
+  padding: 5px;
+  font-family: var(--font-space-mono);
+  font-size: 14px; /* Added 'px' unit to the font-size */
+}
 
+.underline {
+  color: #7F5EDD;
+  border-bottom: 2px solid #7F5EDD;
+}
+
+.rectanglesContainer {
+  position: absolute;
+  left: 183px;
+  top: 450px;
+  width: 566px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.rectangleColumn {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+}
+
+.rectangle {
+  width: 100px;
+  height: 20px;
+  box-sizing: border-box;
+}
+
+.text {
+  position: relative;
+  bottom: 18px;
+  text-align: center;
+}
+
+.expandableDivContainer {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 900px;
+  top: 700px;
+  left: 183px;
+  gap: 20px;
+}
+
+.expandableDivColumn {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.cardDivContainer {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 900px;
+  top: 850px;
+  left: 183px;
+  gap: 20px;
+  padding-bottom: 50px;
+}
+
+@media screen and (max-width: 1200px) {
+
+
+  .dashedBorderContainer,
+  .rectanglesContainer,
+  .expandableDivContainer,
   .cardDivContainer {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 900px;
-    top: 1000px; /* Adjust the top position to move the container down */
-    left: 183px;
-    gap: 20px;
+    width: 100%;
+    left: 0;
   }
+}
+
+@media screen and (max-width: 768px) {
+
+  .dashedBorderContainer,
+  .rectanglesContainer,
+  .expandableDivContainer,
+  .cardDivContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    
+  }
+
+  .dashedBorderContainer,
+  .rectanglesContainer {
+    padding: 10px;
+  }
+
+  .expandableDivColumn,
+  .cardDivContainer {
+    width: 100%;
+    padding: 10px;
+  }
+}

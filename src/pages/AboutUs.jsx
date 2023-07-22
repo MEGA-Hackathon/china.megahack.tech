@@ -60,7 +60,7 @@ function AboutUs() {
           <img src="/triangle.svg" alt="tri" />
         <div className={Styles.triContent}>
           <div className={Styles.triText}>{t('aboutus.tritext')}</div>
-          <div className={Styles.triLearn}>{t('aboutus.learn')}</div>
+          <div className={Styles.triLearn} onClick={()=>navigate('/MegaIdeaHack')}>{t('aboutus.learn')}</div>
         </div>
       </div>
 
