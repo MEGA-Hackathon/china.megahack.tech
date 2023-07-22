@@ -376,7 +376,7 @@
 
 .event {
     position: absolute;
-    margin-top: 196vh;
+    margin-top: 175vh;
     width: 100%;
     display: flex;
 }
@@ -426,26 +426,27 @@
 
 .eventHead {
    position: absolute;
-   margin-top: 174vh;
-   width: 100%;
-   
+   margin-top: 155vh;
+   width: 100%;   
 }
 .eventTitle{
-    font-family: var(--font-space-mono);
+    font-family: var(--font-space-abel);
     color: var(--color-mediumslateblue-100);
     font-size: 1.7rem;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     padding-top: 30px;
+    text-align: center;
     
 }
 .activity{
-    font-family: var(--font-space-mono);
-    font-size: 1.2rem;
-    font-weight: 100;
-    letter-spacing: 1.6;
+    font-family: var(--font-space-abel);
+    font-size: 1.5rem;
+    /* font-weight: 100; */
+    letter-spacing: 3px;
     font-weight: bold;
-}
+    text-align: center;
+  }
 
 
 
@@ -602,7 +603,7 @@
 
   .sponsors {
     position: absolute;
-    margin-top: 303vh;
+    margin-top: 275vh;
     left: 25%;
     height: 70vh;
     flex: 100px;
@@ -633,7 +634,7 @@
 
 .contactUs {
     position: absolute;
-    margin-top: 372vh;
+    margin-top: 350vh;
     height: 80vh;
     background-color: black;
     width: 100%;

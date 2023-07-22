@@ -169,7 +169,7 @@ function Homepage() {
                     </div>
                 </div>
 
-                <div style={{align:"center"}}>
+                <div style={{display: "flex",justifyContent: "center"}}>
                     <div className={Styles.learnMore} onClick={navigateToResources}>{t('intro.learnmore')}</div>
                 </div>
 
