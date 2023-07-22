@@ -1,5 +1,5 @@
 # china.megahack.tech
-Megahack China built with Vite + React + Typescript
+Megahack China built with Vite + React + Javascript
 
 ## Clone the project
 first, `npm install` then
